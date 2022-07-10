@@ -1,17 +1,11 @@
 export class Api {
 
-    static setToken() {
-        this.token = localStorage.getItem('@kenzie-blog:token')
-
-        return this.token
-    }
-
     static async getData() {
         const response = await fetch('https://blog-m2.herokuapp.com/posts', {
             method: "GET", 
             headers: {
               "Content-Type": "application/json", 
-              Authorization: `Bearer ${this.setToken()}`
+              Authorization: `Bearer ${localStorage.getItem('@kenzie-blog:token')}`
             }
           })
           .then(res => res.json())
@@ -37,12 +31,11 @@ export class Api {
     }
 
     static async getEspecificUser(id) {
-        const token = localStorage.getItem('@kenzie-blog:token')
         const response = await fetch(`https://blog-m2.herokuapp.com/users/${id}`, {
             method: "GET", 
             headers: {
               "Content-Type": "application/json", 
-              Authorization: `Bearer ${token}`
+              Authorization: `Bearer ${localStorage.getItem('@kenzie-blog:token')}`
             }
           })
           .then(res => res.json())
@@ -79,7 +72,7 @@ export class Api {
         .then((res) => res.json())
         .then((res) => {
             localStorage.setItem('@kenzie-blog:userId', JSON.stringify(res.userId))
-            localStorage.setItem('@kenzie-blog:token', JSON.stringify(res.token))
+            localStorage.setItem('@kenzie-blog:token', res.token)
 
             return res
         })
@@ -92,12 +85,11 @@ export class Api {
     }
 
     static async createPost(data) {
-        const token = localStorage.getItem('@kenzie-blog:token')
         const response = await fetch("https://blog-m2.herokuapp.com/posts", {
             method: "POST", 
             headers: {
               "Content-Type": "application/json", 
-              Authorization: `Bearer ${token}`
+              Authorization: `Bearer ${localStorage.getItem('@kenzie-blog:token')}`
             },
             body: JSON.stringify(data), 
         })
@@ -109,12 +101,11 @@ export class Api {
     }
 
     static async editPost(data, idPost) {
-        const token = localStorage.getItem('@kenzie-blog:token')
         const response = await fetch(`https://blog-m2.herokuapp.com/posts/${idPost}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json", 
-              Authorization: `Bearer ${token}` 
+              Authorization: `Bearer ${localStorage.getItem('@kenzie-blog:token')}` 
             },
             body: JSON.stringify(data), 
          })
@@ -126,12 +117,11 @@ export class Api {
     }
 
     static async deletePost(idPost) {
-        const token = localStorage.getItem('@kenzie-blog:token')
         const response = await fetch(`https://blog-m2.herokuapp.com/posts/${idPost}`, {
             method: "DELETE", 
             headers: {
               "Content-Type": "application/json",
-              "Authorization": `Bearer ${token}` 
+              "Authorization": `Bearer ${localStorage.getItem('@kenzie-blog:token')}` 
             }
         })
         

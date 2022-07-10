@@ -1,15 +1,15 @@
 html, body {
-    width: 100%;
-    height: 100%;
+    width:            100%;
+    height:           100%;
     background-color: rgba(var(--color-gray), 1);
 }
 
 header {
     width:            100%;
-    min-width: 100%;
     height:           3.75rem;
     display:          flex;
     padding:          .8125rem 2.4375rem  .8125rem .875rem;
+    min-width:        100%;
     align-items:      center;
     flex-direction:   row;
     justify-content:  space-between;
@@ -17,158 +17,156 @@ header {
 }
 
 #infoUser {
-    gap: .5625rem;
-    width: 50%;
-    display: flex;
-    align-items: center;
+    gap:            .5625rem;
+    width:          50%;
+    display:        flex;
+    align-items:    center;
     flex-direction: row;  
 }
 
 
 #infoUser figure {
-    width: 3.0625rem;
-    height: 2.875rem;
-    border-radius: 50%;
+    width:            3.0625rem;
+    height:           2.875rem;
+    border-radius:    50%;
     background-color: rgba(var(--color-white), 1);
 }
 
 #infoUser img {
-    width: 100%;
-    height: 100%;
+    width:         100%;
+    height:        100%;
     border-radius: 50%;
 }
 
 #userName {
-    color: rgba(var(--color-white), 1);
-    font-size: 1.25rem ;
+    color:       rgba(var(--color-white), 1);
+    font-size:   1.25rem ;
     font-weight: 700 ;
     font-family: var(--font-firstOption);
 }
 
 #btnLogout {
-    color: rgba(var(--color-white), 1) ;
-    border: none;
-    width: 6.0625rem;
-    height: 1.875rem;
-    font-size: 1.125rem ;
-    font-weight: 400 ;
-    font-family: var(--font-firstOption);
+    color:            rgba(var(--color-white), 1) ;
+    width:            6.0625rem;
+    border:           none;
+    height:           1.875rem;
+    font-size:        1.125rem ;
+    font-weight:      400 ;
+    font-family:      var(--font-firstOption);
+    border-radius:    .3125rem;
     background-color: rgba(var(--color-yellow), 1) ;
-    border-radius: .3125rem;
 }
 
 #btnLogout:hover, #createPublication button:hover{
+    cursor:           pointer;
     background-color: #ffab3b;
-    cursor: pointer;
 }
 
 #loginUndefined {
-    position: absolute;
+    top:              8.375rem;  
+    width:            26.75rem;
+    height:           25.0625rem;
+    z-index:          1;  
+    display:          none;
+    padding:          2rem 2rem;
+    position:         absolute;
+    align-items:      center;
+    border-radius:    .3125rem ;
+    flex-direction:   column;
+    justify-content:  space-between;
     background-color: rgba(var(--color-blue), 1);
-    display: none;
-    flex-direction: column;
-    width: 26.75rem;
-    height: 25.0625rem;
-    border-radius: .3125rem ;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 2rem;
-    z-index: 1;
-    top: 8.375rem;   
 }
 
 #loginUndefined h1 {
-    color: rgba(var(--color-white), 1);
-    font-size: 1.875rem ;
+    color:       rgba(var(--color-white), 1);
+    font-size:   1.875rem ;
+    text-align:  center;
     font-weight: 700 ;
     font-family: var(--font-firstOption);
-    text-align: center;
 }
 
 #loginUndefined div {
-    display: flex;
+    gap:            .75rem;
+    display:        flex;
     flex-direction: column;
-    gap: .75rem;
 }
 
 #loginUndefined div p {
-    color: rgba(var(--color-white), 1);
-    font-size: 1.25rem;
+    color:       rgba(var(--color-white), 1);
+    font-size:   1.25rem;
+    text-align:  center;
     font-weight: 500 ;
     font-family: var(--font-firstOption);
-    text-align: center;
 } 
 
 #loginUndefined_btns {
-    width: 100%;
+    gap:             .375rem;
+    width:           100%;
+    align-items:     center;
     justify-content: center;
-    align-items: center;
-    gap: .375rem;
 }
 
 #btnRegistration, #btnLogin {
-    width: 8.25rem;
-    height: 2.625rem;
-    border-radius: .3125rem;
-    border: none;
+    width:            8.25rem;
+    height:           2.625rem;
+    border:           none;
+    border-radius:    .3125rem;
     background-color: rgba(var(--color-yellow), 1);
 }
 
 #btnRegistration:hover, #btnLogin:hover, .btnEditPublication:hover {
-    cursor: pointer;
+    cursor:           pointer;
     background-color: orange;
 }
 
 a {
-    color: rgba(var(--color-white), 1);
-    font-size: 1.125rem;
+    color:       rgba(var(--color-white), 1);
+    font-size:   1.125rem;
     font-weight: 400 ;
     font-family: var(--font-firstOption);
 }
 
-
-
 main {
-    width: 100%;
-    height: 91.5%;
-    padding: 1.375rem 0;
-    display: flex;
+    width:           100%;
+    height:          91.5%;
+    padding:         1.375rem 0;
+    display:         flex;
     justify-content: center;
 }
 
 section {
-    width: 37.5625rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2.25rem;
+    gap:             2.25rem;
+    width:           37.5625rem;
+    height:          100%;
+    display:         flex;
+    align-items:     center;
+    flex-direction:  column;
     justify-content: flex-start;
-    align-items: center;
 }
 
 #createPublication {
-    width: 100%;
-    min-height: 6.0625rem;
-    border-radius: .3125rem;
-    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.29);
+    width:              100%;
+    display:            flex;
+    min-height:         6.0625rem;
+    box-shadow:         0px 3px 3px 1px rgba(0,0,0,0.29);
     -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.29);
-    -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.29);
-    background-color: rgba(var(--color-white), 1);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    -moz-box-shadow:    0px 3px 3px 1px rgba(0,0,0,0.29);
+    align-items:        flex-end;
+    border-radius:      .3125rem;
+    flex-direction:     row;
+    background-color:   rgba(var(--color-white), 1); 
 }
 
 #createPublication_input {
-    width: 92%;
-    height: 100%;
-    border: none;
-    border-radius: .3125rem;
-    padding: 1.125rem;
-    box-sizing: border-box;
-    font-size: 1rem ;
-    font-weight: 400 ;
-    font-family: var(--font-firstOption);
+    width:          92%;
+    height:         100%;
+    border:         none;
+    padding:        1.125rem;
+    font-size:      1rem ;
+    box-sizing:     border-box;
+    font-weight:    400 ;
+    font-family:    var(--font-firstOption);
+    border-radius:  .3125rem;
 }
 
 #createPublication_input:focus {
@@ -176,78 +174,76 @@ section {
 }
 
 #createPublication_input::placeholder{
-    position:fixed;
+    position: fixed;
 }
 
 #createPublication button {
-    width: 1.5625rem;
-    height: 1.5625rem;
+    width:            1.5625rem;
+    height:           1.5625rem;
+    border:           none;
+    margin:           0 0 0.625rem 0;
+    display:          flex;
+    align-items:      center;
+    border-radius:    .3125rem;
+    justify-content:  center;
     background-color: rgba(var(--color-yellow), 1);
-    border: none;
-    border-radius: .3125rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0 0.625rem 0;
 }
  
 #listPublications {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
+    gap:             .375rem;
+    width:           100%;
+    display:         flex;
+    flex-direction:  column-reverse;
+    padding-bottom:  1.875rem;
     justify-content: flex-start;
-    gap: .375rem;
-    padding-bottom: 1.875rem;
 }
 
 .listPublications_item {
-    width: 100%;
-    min-height: 11.25rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.3125rem;
-    background-color: rgba(var(--color-white), 1);
-    border-radius: .3125rem ;
-    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.29);
+    width:              100%;
+    display:            flex;
+    padding:            1.3125rem;
+    box-shadow:         0px 3px 3px 1px rgba(0,0,0,0.29);
     -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.29);
-    -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.29);
-
+    -moz-box-shadow:    0px 3px 3px 1px rgba(0,0,0,0.29);
+    min-height:         11.25rem;
+    border-radius:      .3125rem ;
+    justify-content:    space-between;
+    background-color:   rgba(var(--color-white), 1);
 }
 
 .listPublications_item img{
-    width: 4.4375rem;
-    height: 4.375rem;
+    width:         4.4375rem;
+    height:        4.375rem;
     border-radius: 50%;
 }
 
 .item_publication {
-    width: 21.9375rem;
+    width:      21.9375rem;
     min-height: 8.3125rem;
 }
 
 .item_publication h2 {
-    font-size: 1rem ;
+    font-size:   1rem ;
     font-weight: 700 ;
     font-family: var(--font-firstOption)
 }
 
 .item_publication p, .editPublication{
-    color: rgba(var(--color-dark-gray), 1);
-    width: 100%;
-    font-size: 1rem ;
-    font-weight: 400 ;
-    font-family: var(--font-secondOption); 
+    color:         rgba(var(--color-dark-gray), 1);
+    width:         100%;
+    font-size:     1rem ;
+    font-weight:   400 ;
+    font-family:   var(--font-secondOption); 
     overflow-wrap: break-word;
 }
 
 .editPublication {
-    border: none;
-    position: absolute;
-    z-index: 1;
-    max-width: 21.9375rem;
-    display: none;
+    border:            none;
+    display:           none;
+    z-index:           1;
+    max-width:         21.9375rem;
+    border-radius:    .3125rem;
     background-color: rgba(var(--color-gray), 1);
-    border-radius: .3125rem;
 }
 
 .editPublication:focus {
@@ -255,70 +251,66 @@ section {
 }
 
 .btnEditPublication {
-    border: none;
-    position: absolute;
-    z-index: 1;
-    opacity: 6;
-    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.29);
+    color:              rgba(var(--color-white), 1);
+    width:              4.5rem;
+    border:             none;
+    z-index:            1;
+    display:            none;
+    opacity:            6;
+    position:           absolute;
+    box-shadow:         0px 3px 3px 1px rgba(0,0,0,0.29);
     -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.29);
-    -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.29);
-    width: 4.5rem;
-    background-color: rgba(var(--color-yellow), 1);
-    border: none;
-    border-radius: .3125rem;
-    padding-top: 0.2rem;
-    color: rgba(var(--color-white), 1);
-    font-family: var(--font-firstOption);
-    display: none;
+    -moz-box-shadow:    0px 3px 3px 1px rgba(0,0,0,0.29);
+    font-family:        var(--font-firstOption);
+    padding-top:        0.2rem;
+    border-radius:      .3125rem;
+    background-color:   rgba(var(--color-yellow), 1); 
 }
 
 .item_toolsAndDate {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    gap:             .625rem;
+    height:          100%;
+    display:         flex;
+    flex-direction:  column;
     justify-content: flex-end;
-    gap: .625rem;
-
 }
 
 .btnEdit, .btnDelete {
-    width: 2.375rem ;
-    height: 0.8125rem;
-    font-size: .75rem ;
-    font-weight: 400 ;
-    font-family: var(--font-firstOption);
-    background-color: unset;
-    border: none;
-    
+    width:            2.375rem ;
+    height:           0.8125rem;
+    border:           none;
+    font-size:        .75rem ;
+    font-weight:      400 ;
+    font-family:      var(--font-firstOption);
+    background-color: unset; 
 }
 
 .btnEdit {
-    color: rgba(var(--color-blue), 1);
+    color:        rgba(var(--color-blue), 1);
     padding-left: 0.9375rem
-  
 }
 
 .btnEdit:hover {
+    color:  darkblue;
     cursor: pointer;
-    color: darkblue;
 }
 
 .btnDelete {
-    color: rgba(var(--color-red), 1);
+    color:        rgba(var(--color-red), 1);
     padding-left: 0.7rem;
 }
 
 .btnDelete:hover {
+    color:  darkred;
     cursor: pointer;
-    color: darkred;
 }
 
 
 .editPublication_input {
-    display: block;
-    position: absolute;
-    border-radius: .3125rem;
-    border: 1px solid rgba(var(--color-dark-gray), 1);   
+    border:        1px solid rgba(var(--color-dark-gray), 1);   
+    display:       block;
+    position:      absolute;
+    border-radius: .3125rem;   
 }
 
 .editPublication_input:focus {
@@ -326,14 +318,13 @@ section {
 }
 
 .item_toolsAndDate span {
-    width: 4rem;
-    height: .875rem;
-    color: rgba(var(--color-dark-gray), 1);
-    font-size: .75rem ;
+    color:       rgba(var(--color-dark-gray), 1);
+    width:       4rem;
+    height:      .875rem;
+    font-size:   .75rem ;
+    text-align:  center;
     font-weight: 400 ;
-    font-family: var(--font-secondOption);
-    text-align: center;
-    
+    font-family: var(--font-secondOption);   
 }
 
 @media (max-width : 600px) {
@@ -342,7 +333,7 @@ section {
         min-width: 21.9rem;
     }
     section {
-        width: 80%;
+        width:     80%;
         min-width: 21rem;
     }
 
