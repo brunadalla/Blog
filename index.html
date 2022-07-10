@@ -1,12 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-br">
+
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>m2-entrega-blog-m2</title>
+
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <link rel="stylesheet" href="src/styles/default.css">
+  <link rel="stylesheet" href="src/styles/style.css">
+
+  <title>Kenzie Blog</title>
+
 </head>
+
 <body>
+
+  <header>
+
+    <div id="infoUser">
+
+      <figure id="userFigure">
+
+        <img id="userImg">
+
+      </figure>
+
+
+      <h1 id="userName"></h1>
+
+    </div>
+
+    <button id="btnLogout">Logout</button>
+
+  </header>
+
+  <main>
+
+    <!-- display none -->
+    <div id="loginUndefined">
+
+      <h1>Opa!</h1>
+
+      <div>
+
+        <p>Você não pode ver o conteúdo sem estar logado. </p>
+
+        <p>Caso ainda não seja membro, cadastre-se agora! </p>
+
+      </div>
+
+      <div id="loginUndefined_btns">
+
+        <button id="btnRegistration">
+
+          <a href="./src/pages/registration.html">Cadastrar</a>
+
+        </button>
+
+        <button id="btnLogin">
+
+          <a href="./src/pages/login.html">Login</a>
+
+        </button>
+
+      </div>
+
+    </div>
+    <!--  -->
+
+    <section>
+
+      <div id="createPublication">
+
+        <input type="text" placeholder="Comece seu post incrivel!" id="createPublication_input">
+
+        <button id="btnCreatePublication">
+
+          <img src="src/assests/plusIcon.svg" alt="">
+
+        </button>
+
+      </div>
+
+      <ul id="listPublications">
+
+      </ul>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="src/js/models/publicationCard.model.js"></script>
+  <script type="module" src="src/js/controllers/publications.js"></script>
+  <script type="module" src="src/script.js"></script>
   
 </body>
+
 </html>

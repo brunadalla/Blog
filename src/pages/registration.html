@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet"    href="../styles/default.css">
+    <link rel="stylesheet" href="../styles/registration.css">
+
+    <title>Cadastro</title>
+
+</head>
+
+<body>
+    
+    <main>
+
+        <h1>Cadastro</h1>
+
+        <form id="formRegister" action="">
+
+            <input type="text" id="userName" name="userName" placeholder="Nome de usuário" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="url" id="profilePicture" name="profilePicture" placeholder="Foto de perfil">
+            <input type="password" id="password" name="password" placeholder="Senha" required>
+            
+            <button id="btnRegister">Cadastrar</button>
+
+        </form>
+
+    </main>
+
+    <script type="module" src="../js/controllers/register.controller.js"></script>
+    
+</body>
+
+</html>

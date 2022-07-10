@@ -1,0 +1,72 @@
+html, body {
+    width:            100%;
+    height:           100%;
+    display:          flex;
+    align-items:      center;
+    justify-content:  center;
+    background-color: rgba(var(--color-gray), 1);  
+}
+
+main {
+    gap: 1.9375rem;
+    display: flex;
+    width: 26.75rem;
+    height: 23.6875rem;
+    border-radius: .3125rem ;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 2rem 0 2rem;
+    background-color: rgba(var(--color-blue), 1);
+    
+}
+
+h1 {
+    color: rgba(var(--color-white), 1);
+    font-size: 1.875rem ;
+    font-weight: 700 ;
+    font-family: var(--font-firstOption);
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    height: 17.0625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5.5625rem;
+}
+
+input {
+    width: 15.375rem;
+    height: 2.625rem;
+    padding: .75rem;
+    background-color: rgba(var(--color-gray), 1);
+    border: none;
+    border-radius: .3125rem;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+}
+
+button {
+    width: 8.25rem;
+    height: 2.625rem;
+    border-radius: .3125rem;
+    border: none;
+    background-color: rgba(var(--color-yellow), 1);
+    color: rgba(var(--color-white), 1);
+    font-size: 1.125rem;
+    font-weight: 400 ;
+    font-family: var(--font-firstOption)
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+

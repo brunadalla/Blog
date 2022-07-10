@@ -1,0 +1,23 @@
+html, body, div, span,
+h1, h2, p, a, img, ul, 
+li, form, figure, 
+header, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+article, figure, header, section {
+	display: block;
+}
+
+
+
+ul {
+	list-style: none;
+}
