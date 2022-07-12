@@ -53,10 +53,9 @@ export class Api {
             },
             body: JSON.stringify(data)
         })
-        .then(res => {
-            window.location.assign('login.html')
-        })
-        .catch(err => alert(err)) 
+        .then(res => res.json())
+        .then(res => res)
+        .catch(err => console.log(err)) 
 
         return response
     }
@@ -78,8 +77,6 @@ export class Api {
         })
         .then(res => res)
         .catch((err) => console.log(err))
-
-        window.location.assign('../../index.html')
 
         return token
     }

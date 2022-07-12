@@ -13,5 +13,13 @@ btnRegister.addEventListener('click', async (e) => {
         password:  inputs[3].value
     }
     
-    await Api.registerUser(content)
+    const register = await Api.registerUser(content)
+
+    if (register.message) {
+        alert(register.message)
+    }
+
+    else {
+        window.location.assign('login.html')
+    }
 })

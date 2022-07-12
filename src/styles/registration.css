@@ -70,3 +70,14 @@ button:hover {
     background-color: orange;
 }
 
+@media (max-width : 600px) {
+
+   main {
+        width:60%;
+        min-width:160px
+   }
+
+   input {
+        width: 10rem;
+   }
+}

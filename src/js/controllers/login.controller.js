@@ -11,5 +11,14 @@ btnLogin.addEventListener('click', async (e) => {
         password: inputs[1].value   
     }
     
-    await Api.login(content)
+    const login = await Api.login(content)
+
+    if (login.message) {
+        alert(login.message)
+    }
+
+    else {
+        window.location.assign('../../index.html')
+    }
+    
 })
